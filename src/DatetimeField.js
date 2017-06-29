@@ -1,7 +1,10 @@
 import React from 'react'
+import _ from 'underscore'
 import PropTypes from 'prop-types'
 import DateTime from 'react-datetime'
 import moment from 'moment'
+
+import 'react-datetime/css/react-datetime.css'
 
 import { propTypes, defaultProps } from './propTypes.js'
 import WrapperField from './WrapperField.js'

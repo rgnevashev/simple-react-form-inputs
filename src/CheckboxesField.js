@@ -21,11 +21,9 @@ export default class CheckboxesField extends React.Component {
     this.setState({ value: this.formater(nextProps.value) })
   }
 
-  onChange(event) {
-    const { value } = this.state
-    const values = event.target.checked ?
-      _.union(value || [], [event.target.value]) :
-      _.without(value || [], event.target.value)
+  onChange({ checked, value }) {
+    const { value: val } = this.state
+    const values = checked ? (val || []).concat(value) : (val || []).filter(v => v !== value)
     this.setState({ value: values })
     this.props.onChange(values)
   }
@@ -36,7 +34,7 @@ export default class CheckboxesField extends React.Component {
 
   renderOption({ props, value, option, index }) {
     if (props.renderOption) {
-      return props.renderOption({ props, value, option, index })
+      return props.renderOption({ props, value, option, index, onChange: this.onChange })
     }
 
     return (
@@ -44,11 +42,11 @@ export default class CheckboxesField extends React.Component {
         key={`${option.label}-${option.value}-${index}`}
         name={props.fieldName}
         defaultValue={option.value}
-        onChange={event => this.onChange(event, index)}
-        checked={_.contains(value, option.value)}
+        onChange={event => this.onChange(event.target)}
+        checked={(value || []).includes(option.value.toString())}
         disabled={props.disabled}
         inline={props.inline}
-        className={_.contains(value, option.value) && 'checked'}
+        className={(value || []).includes(option.value.toString()) && 'checked'}
         {...props.passProps}
       >
         {option.label}

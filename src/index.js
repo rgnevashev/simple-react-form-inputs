@@ -6,16 +6,16 @@ import TextareaField from './TextareaField.js'
 import NumberField from './NumberField.js'
 import EmailField from './EmailField.js'
 import PasswordField from './PasswordField.js'
+import DateField from './DateField.js'
 import SelectField from './SelectField.js'
 import CheckboxField from './CheckboxField.js'
 import RadioField from './RadioField.js'
+import CheckboxesField from './CheckboxesField.js'
 
-import DateField from './DateField.js'
+import DatetimeField from './DatetimeField.js'
 import DateRangeField from './DateRangeField.js'
 import DatetimeRangePickerField from './DatetimeRangePickerField.js'
 import PhoneField from './PhoneField.js'
-import CheckboxesField from './CheckboxesField.js'
-import DatetimeField from './DatetimeField.js'
 import TagsField from './TagsField.js'
 import ColorField from './ColorField.js'
 //import FileField from './FileField.jsx'
@@ -48,6 +48,6 @@ export {
   TagsField,
   ColorField,
   //FileField,
-  TextareaAutosizeField,
+  TextareaAutosizeField
   //EditorField
 }
