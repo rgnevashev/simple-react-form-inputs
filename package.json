@@ -1,6 +1,6 @@
 {
   "name": "react-simpl-form-fields",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "scripts": {
     "start": "babel ./src --watch --out-dir ./lib",
