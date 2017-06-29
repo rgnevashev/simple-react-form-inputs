@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import DateTime from 'react-datetime'
 import moment from 'moment'
 
@@ -56,8 +57,8 @@ export default class DatetimeField extends React.Component {
 }
 DatetimeField.propTypes = {
   ...propTypes,
-  timeConstraints: React.PropTypes.object,
-  timezone: React.PropTypes.any
+  timeConstraints: PropTypes.object,
+  timezone: PropTypes.any
 }
 DatetimeField.defaultProps = {
   ...defaultProps,

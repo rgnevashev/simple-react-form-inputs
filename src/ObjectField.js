@@ -1,5 +1,6 @@
 import React from 'react'
-import { ObjectComponent } from 'react-simpl-form'
+import PropTypes from 'prop-types'
+import ObjectComponent from 'react-simpl-form/lib/Object'
 
 import { propTypes, defaultProps } from './propTypes.js'
 import WrapperField from './WrapperField.js'
@@ -20,7 +21,7 @@ export default class ObjectField extends ObjectComponent {
 ObjectField.propTypes = {
   ...propTypes,
   ...ObjectComponent.propTypes,
-  parentClassName: React.PropTypes.string
+  parentClassName: PropTypes.string
 }
 ObjectField.defaultProps = {
   ...defaultProps,

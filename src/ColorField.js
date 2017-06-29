@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react'
+import PropTypes from 'prop-types'
 import * as ColorPickers from 'react-color'
 
 import { propTypes, defaultProps } from './propTypes.js'
@@ -93,7 +94,7 @@ export default class ColorField extends React.Component {
 }
 ColorField.propTypes = {
   ...propTypes,
-  component: React.PropTypes.string
+  component: PropTypes.string
 }
 ColorField.defaultProps = {
   ...defaultProps,

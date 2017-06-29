@@ -1,5 +1,6 @@
 import React from 'react'
-import { FormControl } from 'react-bootstrap'
+import PropTypes from 'prop-types'
+import FormControl from 'react-bootstrap/lib/FormControl'
 import Select from 'react-select/lib/Select'
 import Creatable from 'react-select/lib/Creatable'
 import Async from 'react-select/lib/Async'
@@ -106,10 +107,10 @@ export default class SelectField extends CommonTextField {
 }
 SelectField.propTypes = {
   ...SelectField.propTypes,
-  async: React.PropTypes.bool,
-  createable: React.PropTypes.bool,
-  selectable: React.PropTypes.bool,
-  method: React.PropTypes.string
+  async: PropTypes.bool,
+  createable: PropTypes.bool,
+  selectable: PropTypes.bool,
+  method: PropTypes.string
 }
 SelectField.defaultProps = {
   ...SelectField.defaultProps,

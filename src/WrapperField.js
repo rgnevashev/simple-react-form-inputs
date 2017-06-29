@@ -1,7 +1,12 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react'
 import classNames from 'classnames'
-import { Col, FormControl, FormGroup, InputGroup, ControlLabel, HelpBlock } from 'react-bootstrap'
+import Col from 'react-bootstrap/lib/Col'
+import FormControl from 'react-bootstrap/lib/FormControl'
+import FormGroup from 'react-bootstrap/lib/FormGroup'
+import InputGroup from 'react-bootstrap/lib/InputGroup'
+import ControlLabel from 'react-bootstrap/lib/ControlLabel'
+import HelpBlock from 'react-bootstrap/lib/HelpBlock'
 
 import { propTypes, defaultProps } from './propTypes.js'
 

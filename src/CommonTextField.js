@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormControl } from 'react-bootstrap'
+import FormControl from 'react-bootstrap/lib/FormControl'
 
 import { propTypes, defaultProps } from './propTypes.js'
 import WrapperField from './WrapperField.js'

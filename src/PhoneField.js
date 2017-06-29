@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react'
-//import PhoneInput from 'react-telephone-input'
+import PropTypes from 'prop-types'
 import PhoneInput from 'react-phone-number-input'
 
 //import 'react-phone-number-input/rrui.css'
@@ -51,9 +51,9 @@ export default class PhoneField extends React.Component {
 }
 PhoneField.propTypes = {
   ...propTypes,
-  country: React.PropTypes.string,
-  //preferredCountries: React.PropTypes.array,
-  //onChangeCountry: React.PropTypes.func
+  country: PropTypes.string,
+  //preferredCountries: PropTypes.array,
+  //onChangeCountry: PropTypes.func
 }
 PhoneField.defaultProps = {
   ...defaultProps,
@@ -104,9 +104,9 @@ export default class PhoneField extends React.Component {
 }
 PhoneField.propTypes = {
   ...propTypes,
-  country: React.PropTypes.string,
-  preferredCountries: React.PropTypes.array,
-  onChangeCountry: React.PropTypes.func
+  country: PropTypes.string,
+  preferredCountries: PropTypes.array,
+  onChangeCountry: PropTypes.func
 }
 PhoneField.defaultProps = {
   ...defaultProps,

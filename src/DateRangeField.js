@@ -1,10 +1,11 @@
 /* eslint-disable no-nested-ternary */
+import React from 'react'
 import moment from 'moment'
 import _ from 'underscore'
-import React from 'react'
 import PropTypes from 'prop-types'
-import { Dropdown, FormControl } from 'react-bootstrap'
-import { DateRange } from 'react-date-range'
+import Dropdown from 'react-bootstrap/lib/Dropdown'
+import FormControl from 'react-bootstrap/lib/FormControl'
+import DateRange from 'react-date-range/lib/DateRange'
 
 import { propTypes, defaultProps } from './propTypes.js'
 import WrapperField from './WrapperField.js'

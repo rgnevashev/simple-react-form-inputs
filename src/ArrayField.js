@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { Button } from 'react-bootstrap'
-import { ArrayComponent } from 'react-simpl-form'
+import Button from 'react-bootstrap/lib/Button'
+import ArrayComponent from 'react-simpl-form/lib/Array'
 
 import { propTypes, defaultProps } from './propTypes.js'
 import WrapperField from './WrapperField.js'
@@ -52,10 +53,10 @@ export default class ArrayField extends ArrayComponent {
 ArrayField.propTypes = {
   ...propTypes,
   ...ArrayComponent.propTypes,
-  parentClassName: React.PropTypes.string,
-  childrenClassName: React.PropTypes.string,
-  renderChildrenItem: React.PropTypes.func,
-  renderItem: React.PropTypes.func
+  parentClassName: PropTypes.string,
+  childrenClassName: PropTypes.string,
+  renderChildrenItem: PropTypes.func,
+  renderItem: PropTypes.func
 }
 ArrayField.defaultProps = {
   ...defaultProps,

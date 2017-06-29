@@ -1,6 +1,7 @@
-import _ from 'underscore'
 import React from 'react'
-import { Checkbox } from 'react-bootstrap'
+import PropTypes from 'prop-types'
+import _ from 'underscore'
+import Checkbox from 'react-bootstrap/lib/Checkbox'
 
 import { propTypes, defaultProps } from './propTypes.js'
 import withOptions from './withOptions.js'
@@ -70,10 +71,10 @@ export default class CheckboxesField extends React.Component {
 }
 CheckboxesField.propTypes = {
   ...propTypes,
-  parentClassName: React.PropTypes.string,
-  options: React.PropTypes.any,
-  inline: React.PropTypes.bool,
-  renderOption: React.PropTypes.func
+  parentClassName: PropTypes.string,
+  options: PropTypes.any,
+  inline: PropTypes.bool,
+  renderOption: PropTypes.func
 }
 CheckboxesField.defaultProps = {
   ...defaultProps

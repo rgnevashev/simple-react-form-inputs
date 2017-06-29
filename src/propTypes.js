@@ -9,7 +9,7 @@ export const propTypes = {
   fieldType: PropTypes.string, // FormControl:type Only relevant if componentClass is 'input'
   htmlFor: PropTypes.string, // ControlLabel
   srOnly: PropTypes.bool, // ControlLabel
-  labelCol: React.PropTypes.number, // ControlLabel
+  labelCol: PropTypes.number, // ControlLabel
   leftInputGroupAddon: PropTypes.any, // InputGroup.Addon
   leftInputGroupButton: PropTypes.any, // InputGroup.Button
   leftInputGroup: PropTypes.any, // InputGroup

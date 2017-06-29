@@ -1,5 +1,6 @@
 import React from 'react'
-import { Radio } from 'react-bootstrap'
+import PropTypes from 'prop-types'
+import Radio from 'react-bootstrap/lib/Radio'
 
 import { propTypes, defaultProps } from './propTypes.js'
 import withOptions from './withOptions.js'
@@ -61,10 +62,10 @@ export default class RadioField extends React.Component {
 }
 RadioField.propTypes = {
   ...propTypes,
-  parentClassName: React.PropTypes.string,
-  options: React.PropTypes.any,
-  inline: React.PropTypes.bool,
-  renderOption: React.PropTypes.func
+  parentClassName: PropTypes.string,
+  options: PropTypes.any,
+  inline: PropTypes.bool,
+  renderOption: PropTypes.func
 }
 RadioField.defaultProps = {
   ...defaultProps

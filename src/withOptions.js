@@ -1,10 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import _ from 'underscore'
 
 const withOptions = (component) => {
   component.propTypes = {
     ...component.propTypes,
-    options: React.PropTypes.any
+    options: PropTypes.any
   }
 
   return class extends component {

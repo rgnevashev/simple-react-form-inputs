@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { Checkbox } from 'react-bootstrap'
+import Checkbox from 'react-bootstrap/lib/Checkbox'
 import Toggle from 'react-toggle'
 
 import 'react-toggle/style.css'
@@ -75,10 +76,10 @@ export default class CheckboxField extends React.Component {
 }
 CheckboxField.propTypes = {
   ...propTypes,
-  inline: React.PropTypes.bool,
-  toggle: React.PropTypes.bool,
-  labelOn: React.PropTypes.string,
-  labelOff: React.PropTypes.string
+  inline: PropTypes.bool,
+  toggle: PropTypes.bool,
+  labelOn: PropTypes.string,
+  labelOff: PropTypes.string
 }
 CheckboxField.defaultProps = {
   ...defaultProps
