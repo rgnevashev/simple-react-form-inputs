@@ -1,0 +1,33 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/roman/.nvm/versions/node/v6.11.0/bin/node',
+1 verbose cli   '/home/roman/.nvm/versions/node/v6.11.0/bin/npm',
+1 verbose cli   'version',
+1 verbose cli   '1.0.2' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.0
+4 info git [ 'status', '--porcelain' ]
+5 verbose stack Error: Git working directory not clean.
+5 verbose stack M lib/ArrayField.js
+5 verbose stack M lib/CheckboxesField.js
+5 verbose stack M lib/CommonField.js
+5 verbose stack M lib/DatetimeField.js
+5 verbose stack     at /home/roman/.nvm/versions/node/v6.11.0/lib/node_modules/npm/lib/version.js:247:19
+5 verbose stack     at /home/roman/.nvm/versions/node/v6.11.0/lib/node_modules/npm/lib/utils/no-progress-while-running.js:21:8
+5 verbose stack     at ChildProcess.exithandler (child_process.js:195:7)
+5 verbose stack     at emitTwo (events.js:106:13)
+5 verbose stack     at ChildProcess.emit (events.js:191:7)
+5 verbose stack     at maybeClose (internal/child_process.js:891:16)
+5 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+6 verbose cwd /home/roman/Apps/react-simpl-form-fields
+7 error Linux 3.16.0-4-amd64
+8 error argv "/home/roman/.nvm/versions/node/v6.11.0/bin/node" "/home/roman/.nvm/versions/node/v6.11.0/bin/npm" "version" "1.0.2"
+9 error node v6.11.0
+10 error npm  v3.10.10
+11 error Git working directory not clean.
+11 error M lib/ArrayField.js
+11 error M lib/CheckboxesField.js
+11 error M lib/CommonField.js
+11 error M lib/DatetimeField.js
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
