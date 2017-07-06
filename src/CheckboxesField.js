@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import _ from 'underscore'
 import Checkbox from 'react-bootstrap/lib/Checkbox'
 
 import { propTypes, defaultProps } from './propTypes.js'
@@ -11,6 +10,8 @@ import WrapperField from './WrapperField.js'
 export default class CheckboxesField extends React.Component {
   constructor(props) {
     super(props)
+
+    this.onChange = this.onChange.bind(this)
 
     this.state = {
       value: this.formater(props.value)

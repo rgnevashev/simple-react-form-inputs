@@ -1,20 +1,18 @@
+/* eslint-disable no-nested-ternary */
 import React from 'react'
-import _ from 'underscore'
 import PropTypes from 'prop-types'
 import DateTime from 'react-datetime'
 import moment from 'moment'
 
-import 'react-datetime/css/react-datetime.css'
-
 import { propTypes, defaultProps } from './propTypes.js'
-import WrapperField from './WrapperField.js'
+import WrapperField from './WrapperField.jsx'
 
 export default class DatetimeField extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      value: props.value
+      value: props.value || ''
     }
   }
 
@@ -32,9 +30,7 @@ export default class DatetimeField extends React.Component {
   }
 
   convertToTz(date, timezone) {
-    return date && timezone ?
-      moment(date).tz(timezone) :
-      date
+    return date && timezone ? moment(date).tz(timezone) : date
   }
 
   render() {
@@ -45,10 +41,12 @@ export default class DatetimeField extends React.Component {
       <WrapperField {...props}>
         <DateTime
           defaultValue={this.convertToTz(value, props.timezone)}
+          dateFormat={props.dateFormat}
+          timeFormat={props.timeFormat}
+          timeConstraints={props.timeConstraints}
+          value={this.convertToTz(value, props.timezone)}
           onChange={date => this.onChange(date)}
           onBlur={() => props.onChange(value)}
-          value={this.convertToTz(value, props.timezone)}
-          timeConstraints={props.timeConstraints}
           inputProps={{
             placeholder: props.placeholder || props.passProps.placeholder
           }}
@@ -58,13 +56,19 @@ export default class DatetimeField extends React.Component {
     )
   }
 }
+
 DatetimeField.propTypes = {
   ...propTypes,
+  dateFormat: PropTypes.oneOf(PropTypes.string, PropTypes.bool),
+  timeFormat: PropTypes.oneOf(PropTypes.string, PropTypes.bool),
   timeConstraints: PropTypes.object,
   timezone: PropTypes.any
 }
+
 DatetimeField.defaultProps = {
   ...defaultProps,
+  dateFormat: 'ddd Do MMM YYYY',
+  timeFormat: 'h:mma',
   timezone: false,
   timeConstraints: {
     minutes: {

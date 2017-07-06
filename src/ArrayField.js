@@ -24,6 +24,7 @@ export default class ArrayField extends ArrayComponent {
           {!this.props.disabled &&
             <Button bsStyle="danger" onClick={() => this.removeItem(index)}>
               <i className="fa fa-minus" />
+              {this.props.btnAddText && <span>{this.props.btnAddText}</span>}
             </Button>
           }
         </div>
@@ -32,17 +33,18 @@ export default class ArrayField extends ArrayComponent {
   }
 
   render() {
-    const props = this.props
+    const { parentClassName, showAddButton, disabled, btnAddText } = this.props
 
     return (
-      <WrapperField {...props}>
-        <div className={classNames('sortable-container', props.parentClassName)}>
+      <WrapperField {...this.props}>
+        <div className={classNames('sortable-container', parentClassName)}>
           {this.renderChildren()}
         </div>
         <div>
-          {props.showAddButton && !props.disabled &&
+          {showAddButton && !disabled &&
             <Button bsStyle="primary" onClick={() => this.addItem()}>
               <i className="fa fa-plus" />
+              {btnAddText && <span>{btnAddText}</span>}
             </Button>
           }
         </div>
@@ -53,6 +55,8 @@ export default class ArrayField extends ArrayComponent {
 ArrayField.propTypes = {
   ...propTypes,
   ...ArrayComponent.propTypes,
+  btnAddText: React.PropTypes.string,
+  btnRemoveText: React.PropTypes.string,
   parentClassName: PropTypes.string,
   childrenClassName: PropTypes.string,
   renderChildrenItem: PropTypes.func,
@@ -61,5 +65,5 @@ ArrayField.propTypes = {
 ArrayField.defaultProps = {
   ...defaultProps,
   ...ArrayComponent.defaultProps,
-  childrenClassName: 'row ui segment m-b-10'
+  childrenClassName: 'row m-b-10'
 }

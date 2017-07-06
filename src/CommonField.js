@@ -46,3 +46,13 @@ CommonField.propTypes = {
 CommonField.defaultProps = {
   ...defaultProps
 }
+
+/*
+<Field fieldName="text" type={CommonField} >
+  <input
+    type="text"
+    className="form-control"
+    onChange={event => event.target.value}
+  />
+</Field>
+*/
