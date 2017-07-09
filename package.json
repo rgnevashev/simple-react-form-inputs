@@ -4,7 +4,8 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "babel ./src --watch --out-dir ./lib",
-    "build": "babel ./src --out-dir ./lib"
+    "build": "babel ./src --out-dir ./lib",
+    "prepublish": "yarn run build"
   },
   "files": [
     "lib"
