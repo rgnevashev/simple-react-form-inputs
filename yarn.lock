@@ -13,6 +13,12 @@ ajv@^4.9.1:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
 
+amator@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/amator/-/amator-1.0.1.tgz#0fd3663fef5f3334d088cf68a70ba74398aa0e26"
+  dependencies:
+    bezier-easing "^2.0.3"
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -755,6 +761,10 @@ bcrypt-pbkdf@^1.0.0:
   resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.1.tgz#63bc5dcb61331b92bc05fd528953c33462a06f8d"
   dependencies:
     tweetnacl "^0.14.3"
+
+bezier-easing@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/bezier-easing/-/bezier-easing-2.0.3.tgz#cb493fddb7f8920ecca00973344ce0518885f17e"
 
 binary-extensions@^1.0.0:
   version "1.8.0"
@@ -1612,9 +1622,9 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-autosize-textarea@^0.4.6:
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/react-autosize-textarea/-/react-autosize-textarea-0.4.6.tgz#5748fe9deaea9e058e6c025fb1f95e4ac2aebe9a"
+react-autosize-textarea@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/react-autosize-textarea/-/react-autosize-textarea-0.4.7.tgz#5bf4fc6482caf2cdb4e5da10be891b7b8fd5c1eb"
   dependencies:
     autosize "^3.0.15"
     line-height "^0.3.1"
@@ -1642,9 +1652,9 @@ react-bootstrap@^0.31.0:
     uncontrollable "^4.1.0"
     warning "^3.0.0"
 
-react-color@^2.13.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.13.0.tgz#d9c17e70a02023be9e0278a8dc9987fee11052b3"
+react-color@^2.13.1:
+  version "2.13.1"
+  resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.13.1.tgz#8ea05094b7cd1a57f900d1c210b88132e72d460f"
   dependencies:
     lodash "^4.0.1"
     material-colors "^1.2.1"
@@ -1692,9 +1702,9 @@ react-overlays@^0.7.0:
     react-prop-types "^0.4.0"
     warning "^3.0.0"
 
-react-phone-number-input@^0.11.10:
-  version "0.11.10"
-  resolved "https://registry.yarnpkg.com/react-phone-number-input/-/react-phone-number-input-0.11.10.tgz#9406726fe0bf556da6314dd78d70b3f8c570f4d7"
+react-phone-number-input@^0.11.11:
+  version "0.11.11"
+  resolved "https://registry.yarnpkg.com/react-phone-number-input/-/react-phone-number-input-0.11.11.tgz#d3cda9846d65fa5b9afff86650be682e2e38f3a5"
   dependencies:
     babel-runtime "^6.6.1"
     classnames "^2.2.5"
@@ -1702,6 +1712,7 @@ react-phone-number-input@^0.11.10:
     libphonenumber-js "^0.4.15"
     prop-types "^15.5.6"
     react-styling "^1.6.1"
+    scroll-into-view-if-needed "^1.1.0"
 
 react-prop-types@^0.4.0:
   version "0.4.0"
@@ -1718,9 +1729,9 @@ react-select@^1.0.0-rc.5:
     prop-types "^15.5.8"
     react-input-autosize "^1.1.3"
 
-react-simpl-form@^1.9.5:
-  version "1.9.5"
-  resolved "https://registry.yarnpkg.com/react-simpl-form/-/react-simpl-form-1.9.5.tgz#9ad2eb7ad6078b5d74d873fcfc18f84fcc592aeb"
+react-simpl-form@^1.9.6:
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/react-simpl-form/-/react-simpl-form-1.9.6.tgz#67466c8276d64e2f8625ef93fdd5f14c604709bb"
   dependencies:
     dot-object "^1.5.1"
     lodash "^4.17.2"
@@ -1868,6 +1879,12 @@ safe-buffer@^5.0.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
 sax@>=0.6.0:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+
+scroll-into-view-if-needed@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/scroll-into-view-if-needed/-/scroll-into-view-if-needed-1.1.0.tgz#9a0da1424eb2037746ed5c53b797f9676985bfcc"
+  dependencies:
+    amator "^1.0.1"
 
 semver@^5.3.0:
   version "5.3.0"
