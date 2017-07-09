@@ -5,7 +5,7 @@ import DateTime from 'react-datetime'
 import moment from 'moment'
 
 import { propTypes, defaultProps } from './propTypes.js'
-import WrapperField from './WrapperField.jsx'
+import WrapperField from './WrapperField.js'
 
 export default class DatetimeField extends React.Component {
   constructor(props) {
