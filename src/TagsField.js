@@ -2,7 +2,7 @@
 import React from 'react'
 import TagsInput from 'react-tagsinput'
 
-import 'react-tagsinput/react-tagsinput.css'
+//import 'react-tagsinput/react-tagsinput.css'
 
 import { propTypes, defaultProps } from './propTypes.js'
 import WrapperField from './WrapperField.js'

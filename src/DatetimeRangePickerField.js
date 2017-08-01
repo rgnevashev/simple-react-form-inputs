@@ -5,7 +5,7 @@ import DateRangePicker from 'react-bootstrap-daterangepicker'
 import { propTypes, defaultProps } from './propTypes.js'
 import WrapperField from './WrapperField.js'
 
-import 'bootstrap-daterangepicker/daterangepicker.css'
+//import 'bootstrap-daterangepicker/daterangepicker.css'
 
 export default class DatetimeRangePickerField extends React.Component {
   constructor(props) {

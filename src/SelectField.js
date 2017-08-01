@@ -6,7 +6,7 @@ import Creatable from 'react-select/lib/Creatable'
 import Async from 'react-select/lib/Async'
 import AsyncCreatable from 'react-select/lib/AsyncCreatable'
 
-import 'react-select/dist/react-select.css'
+//import 'react-select/dist/react-select.css'
 
 import withOptions from './withOptions.js'
 import CommonTextField from './CommonTextField.js'

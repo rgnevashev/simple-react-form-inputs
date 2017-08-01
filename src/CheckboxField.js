@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Checkbox from 'react-bootstrap/lib/Checkbox'
 import Toggle from 'react-toggle'
 
-import 'react-toggle/style.css'
+//import 'react-toggle/style.css'
 
 import { propTypes, defaultProps } from './propTypes.js'
 import WrapperField from './WrapperField.js'
