@@ -11,6 +11,8 @@ export default class RadioField extends React.Component {
   constructor(props) {
     super(props)
 
+    this.onChange = this.onChange.bind(this)
+
     this.state = {
       value: props.value
     }
