@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ObjectComponent from 'react-simpl-form/lib/Object'
 
+import ObjectComponent from './ObjectComponent.js'
 import { propTypes, defaultProps } from './propTypes.js'
 import WrapperField from './WrapperField.js'
 

@@ -14,7 +14,7 @@ import CheckboxesField from './CheckboxesField.js'
 
 import DatetimeField from './DatetimeField.js'
 import DateRangeField from './DateRangeField.js'
-import DatetimeRangePickerField from './DatetimeRangePickerField.js'
+//import DatetimeRangePickerField from './DatetimeRangePickerField.js'
 import PhoneField from './PhoneField.js'
 import TagsField from './TagsField.js'
 import ColorField from './ColorField.js'
@@ -22,13 +22,19 @@ import ColorField from './ColorField.js'
 //import EditorField from './EditorField.js'
 import TextareaAutosizeField from './TextareaAutosizeField.js'
 
+import ArrayContextItem from './ArrayContextItem.js'
+import ArrayComponent from './ArrayComponent.js'
 import ArrayField from './ArrayField.js'
+import ObjectComponent from './ObjectComponent.js'
 import ObjectField from './ObjectField.js'
 
 export {
   Form,
   Field,
+  ArrayContextItem,
+  ArrayComponent,
   ArrayField,
+  ObjectComponent,
   ObjectField,
   CommonField,
   TextField,
@@ -36,7 +42,6 @@ export {
   NumberField,
   DateField,
   DateRangeField,
-  DatetimeRangePickerField,
   EmailField,
   PasswordField,
   PhoneField,

@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import Button from 'react-bootstrap/lib/Button'
-import ArrayComponent from 'react-simpl-form/lib/Array'
 
+import ArrayComponent from './ArrayComponent.js'
 import { propTypes, defaultProps } from './propTypes.js'
 import WrapperField from './WrapperField.js'
 
