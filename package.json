@@ -17,6 +17,9 @@
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "classnames": "^2.2.5",
+    "dot-object": "^1.7.0",
+    "lodash": "^4.17.4",
+    "mongo-object": "^0.0.2",
     "react-autosize-textarea": "^0.4.9",
     "react-bootstrap": "^0.31.3",
     "react-color": "^2.13.8",
