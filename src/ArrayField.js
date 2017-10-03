@@ -24,7 +24,7 @@ export default class ArrayField extends ArrayComponent {
           {!this.props.disabled &&
             <Button bsStyle="danger" onClick={() => this.removeItem(index)}>
               <i className="fa fa-minus" />
-              {this.props.btnAddText && <span>{this.props.btnAddText}</span>}
+              {this.props.btnRemoveText && <span>{this.props.btnRemoveText}</span>}
             </Button>
           }
         </div>
