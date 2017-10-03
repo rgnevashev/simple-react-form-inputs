@@ -23,7 +23,7 @@
     "react-color": "^2.13.8",
     "react-date-range": "^0.9.4",
     "react-datetime": "^2.10.3",
-    "react-phone-number-input": "^0.13.2",
+    "react-phone-number-input": "0.12.14",
     "react-select": "^1.0.0-rc.10",
     "react-simpl-form": "^1.9.7",
     "react-tagsinput": "^3.18.0",
