@@ -63,7 +63,7 @@ class Form extends React.Component {
     } else if (props.collection) {
       return props.collection.simpleSchema()
     } else {
-      console.log('no schema was specified.')
+      //console.log('no schema was specified.')
     }
   }
 

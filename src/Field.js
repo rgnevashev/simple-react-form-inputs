@@ -24,12 +24,10 @@ class Field extends React.Component {
   }
 
   unregisterField() {
-    console.log('unregisterField', this.getFieldName())
     this.context.form.unregisterComponent(this.getFieldName())
   }
 
   registerField() {
-    console.log('registerField', this.getFieldName())
     this.context.form.registerComponent({
       field: this.getFieldName(),
       component: this.element
